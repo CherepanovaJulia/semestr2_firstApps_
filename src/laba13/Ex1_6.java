@@ -9,10 +9,12 @@ public class Ex1_6 {
             throw new NullPointerException("ошибка");
         } catch (ArithmeticException e) {
             System.out.println("1");
+        } catch (RuntimeException ex) {
+            System.out.println("3");
         } catch (Exception e) {
             System.out.println("2");
-      //  }  (RuntimeException e) {
-            System.out.println("3");
-        }System.out.println("4");
+
+        }
+        System.out.println("4");
     }
 }

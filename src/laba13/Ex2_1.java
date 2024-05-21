@@ -14,7 +14,7 @@ public class Ex2_1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
-        int size = in.nextInt();
+      try{  int size = in.nextInt();
         int[] array = new int[size];
 
         int sum = 0;
@@ -23,7 +23,6 @@ public class Ex2_1 {
         for (int i = 0; i < size; i++) {
             Random random = new Random();
             array[i] = random.nextInt(10);
-
             if (i >= 0) {
                 sum += array[i];
             }
@@ -33,6 +32,10 @@ public class Ex2_1 {
                 System.out.println("Массив: " + Arrays.toString(array));
                 System.out.println("Сумма: " + sum);
                 System.out.println("Среднее: " + middleValue);
-            }
-        }
+            } catch (Exception e) {
+               e.printStackTrace();
+          System.out.println("Введите целое число ");
+      }
+    }
+}
 
