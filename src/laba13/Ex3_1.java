@@ -16,16 +16,23 @@ public class Ex3_1 {
         int number = in.nextInt();
         int[][] array = new int[5][5];
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(i);
-            for (int j = 1; j < array.length; j++) {
-                System.out.print(j);
-            }
-            System.out.println();
+            for (int i = 0; i < array.length; i++) {
+               System.out.print(i);
+                for (int j = 1; j < array.length; j++) {
+
+                    System.out.print(j);
+                   // break;
+                    }
+                System.out.println();
+                }
+
+             System.out.println();
+
         }
 
-    }
-}
+        }
+
+
 
 
 
